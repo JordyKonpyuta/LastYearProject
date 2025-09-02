@@ -14,5 +14,13 @@ UCLASS()
 class LASTYEARPROJECT_API UCustomGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
+
+public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString GameDirectory = "";
+
+	UFUNCTION(BlueprintCallable)
+	void RunWfa(FString Directory);
 	
 };
